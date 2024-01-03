@@ -2,17 +2,35 @@
 
 ## Introduction:
 
-This repository contains supplementary material for the paper "Beat Tracking: Is 44.1 kHz Really Needed?" from the EEICT 2023 student conference, where it won 1st place in the Audio, Speech, and Signal Processing category.
+This repository contains supplementary material for the paper "Beat Tracking: Is 44.1 kHz Really Needed?" from the EEICT 2023 student conference, where it won 1st place in the Audio, Speech and Language Processing category. The paper is available on the conference [website](https://www.eeict.cz/download) or here as '_Istvanek_Miklanek_EEICT2023.pdf'.
+
 Keep in mind that some of the code is taken from [[1]](https://tempobeatdownbeat.github.io/tutorial/intro.html) and we strongly encourage you to check it first.
 
 This study retrains some of the state-of-the-art Temporal Convolutional Network (TCN) models for the beat tracking task with various sampling rates and evaluates the training phase and detection accuracy on well-known data. 
 It provides a bit of insight (most of it is expected and obvious) into the models. We share code and all trained models mentioned in the article plus additional ones (such as 16-kHz models and simple_tcn trained with 50 fps temporal resolution).
-We further used the 'simple_tcn_dp_skip_dilations_22_fps50' model for the synchronization pipeline in [2](https://ieeexplore.ieee.org/document/10335098), [3](https://ismir2023program.ismir.net/lbd_322.html), and the [MemoVision software](https://github.com/stepanmk/memovision).
+We further used the 'simple_tcn_dp_skip_dilations_22_fps50' model for the synchronization pipeline in [[2]](https://ieeexplore.ieee.org/document/10335098), [[3]](https://ismir2023program.ismir.net/lbd_322.html), and the [MemoVision software](https://github.com/stepanmk/memovision).
 
-To reproduce the results, you need audio data (_wav_ files from Ballroom, Hainsworth, GTZAN, SMC, Beatles)
-'''
+## Run:
+
+First, install the requirements:
+
+```
 pip install -r requirements.txt
-'''
+```
+
+To reproduce the results, you need audio data (_wav_ files from Ballroom, Hainsworth, GTZAN, SMC, Beatles) in 'data/WAVS' and corresponding annotations in 'data/ANOTACE'. Then, preprocess the dataset:
+
+```
+python dataset.py
+```
+
+and run the training:
+
+```
+python train_models.py
+```
+
+
 
 ## Acknowledgment:
 
