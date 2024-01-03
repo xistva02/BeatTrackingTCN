@@ -3,7 +3,7 @@
 ## Introduction:
 
 This repository contains supplementary material for the paper "Beat Tracking: Is 44.1 kHz Really Needed?" from the EEICT 2023 student conference, where it won 1st place in the Audio, Speech, and Signal Processing category.
-Keep in mind that some of the code is taken from [1](https://tempobeatdownbeat.github.io/tutorial/intro.html) and we strongly encourage you to check it first.
+Keep in mind that some of the code is taken from {[{[1]}](https://tempobeatdownbeat.github.io/tutorial/intro.html)} and we strongly encourage you to check it first.
 
 This study retrains some of the state-of-the-art Temporal Convolutional Network (TCN) models for the beat tracking task with various sampling rates and evaluates the training phase and detection accuracy on well-known data. 
 It provides a bit of insight (most of it is expected and obvious) into the models. We share code and all trained models mentioned in the article plus additional ones (such as 16-kHz models and simple_tcn trained with 50 fps temporal resolution).
@@ -35,4 +35,4 @@ If you wish to use information or code from the article or this repository, plea
 
 [2] M. Ištvánek, Š. Miklánek, K. H. Mühlová, L. Spurný, and Z. Smékal, “Application of computational methods for comparative music analysis,” in _2023 4th International Symposium on the Internet of Sounds_, 2023, pp. 1-6. [Online]. Available: https://ieeexplore.ieee.org/document/10335098
 
-[3] M. Ištvánek and Š. Miklánek, “Memovision: a tool for feature selection and visualization of performance data,” in _Extended Abstracts for the Late-Breaking Demo Session of the 24th International Society for Music Information Retrieval Conference (ISMIR)_, Milan, Italy, 2023, p. 3
+[3] M. Ištvánek and Š. Miklánek, “Memovision: a tool for feature selection and visualization of performance data,” in _Extended Abstracts for the Late-Breaking Demo Session of the 24th International Society for Music Information Retrieval Conference (ISMIR)_, Milan, Italy, 2023, p. 3. [Online]. Available: https://ismir2023program.ismir.net/lbd_322.html
