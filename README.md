@@ -6,7 +6,7 @@ This repository contains supplementary material for the paper "Beat Tracking: Is
 
 Keep in mind that some of the code is taken from [[1]](https://tempobeatdownbeat.github.io/tutorial/intro.html) and we strongly encourage you to check it first.
 
-This study retrains some of the state-of-the-art Temporal Convolutional Network (TCN) models for the beat tracking task with various sampling rates and evaluates the training phase and detection accuracy on well-known data. 
+This study retrains some of the state-of-the-art Temporal Convolutional Network (TCN) models for the beat tracking task with various sampling rates and evaluates the training phase and detection accuracy on well-known data. It also reimplements some models from the [madmom](https://github.com/CPJKU/madmom) module.
 It provides a bit of insight (most of it is expected and obvious) into the models. We share code and all trained models mentioned in the article plus additional ones (such as 16-kHz models and simple_tcn trained with 50 fps temporal resolution).
 We further used the 'simple_tcn_dp_skip_dilations_22_fps50' model for the synchronization pipeline in [[2]](https://ieeexplore.ieee.org/document/10335098), [[3]](https://ismir2023program.ismir.net/lbd_322.html), and the [MemoVision software](https://github.com/stepanmk/memovision).
 
@@ -30,11 +30,15 @@ and run the training:
 python train_models.py
 ```
 
+## Additional information:
 
+If you have all audio and annotation files (see the paper for details), you should be able to reproduce the results (and evaluate them using evaluation.py) with the scripts provided. 
+
+If you have any questions, feel free to contact me at matej.istvanek@vut.cz.
 
 ## Acknowledgment:
 
-If you wish to use information or code from the article or this repository, please, cite the original paper:
+If you wish to use information, code, or models from the article and this repository, please, cite the original paper:
 
 ```
 @inproceedings{Istvanek_EEICT_Beat_2023,
